@@ -1,0 +1,114 @@
+
+body
+{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 2000px;
+  background-color: #3B7097;
+}
+
+/* första introduktion */
+
+.container {
+  position: relative;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: minmax(100px, auto);
+  margin: 40px;
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+}
+.container .box {
+  background: #75BDE0;
+  padding: 20px;
+  display: grid;
+  font-size: 20px;
+  place-items: center;
+  text-align: center;
+  color: #fff;
+  border-radius: 25px;
+  width: 400px;
+  height: 150px;
+}
+.image1 {
+  display: grid;
+  border-radius: 8px;
+}
+
+.container .box:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.header1 {
+  font-size: 100px;
+}
+
+/* Mina tjänster */
+
+.container2 {
+  position: relative;
+  max-width: 100%;
+  display: relative;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: minmax(100px, auto);
+  margin: 40px;
+  margin: 40px;
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+}
+.container2 .box2 {
+  background: #A9D09E;
+  padding: 20px;
+  display: grid;
+  font-size: 20px;
+  place-items: center;
+  text-align: center;
+  color: #fff;
+  transition: 0.5s;
+}
+
+
+/* box3 */
+
+.container3 {
+  position: grid;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: minmax(100px, auto);
+  margin: 40px;
+  margin: 40px;
+  grid-auto-flow: dense;
+  grid-gap: 20px;
+}
+
+.container3 .box3 {
+  background: #F6E2BC;
+  padding: 10px;
+  display: grid;
+  font-size: 20px;
+  place-items: center;
+  text-align: left;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.header1 {
+  font-size: 50px;
+}
+.header2 {
+  font-size: 50px;
+}
+@media (max-width: 991px) {
+  .container .container2 .container3 {
+
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: minmax(auto, auto);
+  }
+  .container .box .container2 .box2 .container3 .box3 {
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+}

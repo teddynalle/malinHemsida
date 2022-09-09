@@ -1,0 +1,205 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Crimson Text', sans-serif;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  /*background-image: url(wayofking.jpg);*/
+  background-color: #2b463c;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+  color: #f4f1e9;
+  font-size: 38;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+}
+h1 {
+  color: #f4f1e9;
+  margin: 20px 0px 20px;
+  font-size: 75px;
+}
+h3 {
+  color: #f4f1e9;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+h4 {
+  color: #f4f1e9;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+/*
+.contentImage {
+  height: auto;
+  width: 500px;
+  float: right;
+  position: absolute;
+  margin: 0px 0px 600px 700px;
+
+
+
+}
+*/
+/*vem är jag */
+
+.about {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #688f4e;
+}
+.about img {
+  height: auto;
+  width: 200px;
+}
+.about-text {
+  width: 550px;
+}
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text h2 {
+  color: #f4f1e9;
+  font-size: 75px;
+  margin-bottom: 20px;
+}
+.about-text h5 {
+  color: #f4f1e9;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.about-text p {
+  color: #f4f1e9;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+/* Mina tjänster */
+
+.service {
+  background: #b1d182;
+  width: 100%;
+  padding: 100px 0px;
+}
+.title h2{
+  color: #2b463c;
+  font-size: 75px;
+  width: 1130px;
+  margin: 30px auto;
+
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.card {
+  height: 365px;
+  width: 335px;
+  padding: 20px 35px;
+  background: #f4f1e9;
+  border-radius: 200px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.card2 {
+  height: 365px;
+  width: 335px;
+  padding: 20px 35px;
+  background: #f4f1e9;
+  border-radius: 400px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.card3 {
+  height: 365px;
+  width: 335px;
+  padding: 20px 35px;
+  background: #f4f1e9;
+  border-radius: 400px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+h5{
+  color: #2b463c;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.aboutService p{
+  color: #2b463c;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+
+/* Kontakta mig */
+.contact-me{
+  width: 100%;
+  height: 400px;
+  background: #2b463c;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-me p{
+  color: #f4f1e9;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+
+}
+.contact-me a{
+  color: #f4f1e9;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+        }
+
+        @media screen and (max-width: 540px) {
+            .view {
+                width: 400px;
+            }
+        }
+        @media screen and (min-width: 540px) and (max-width: 780px) {
+            .view {
+                width: 600px;
+            }
+        }

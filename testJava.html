@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>javascript test</title>
+</head>
+
+<body>
+  <input id="todo-title" type="text" name="" value=""></input>
+  <input id="date-picker" type="date" name="" value="">
+  <button onclick="addTodo()">Kram Knappen</button>
+  <div id="todo-list"></div>
+  <script>
+    const todos = [{
+      title: 'Krama Malin',
+      dueDate: '2022-10-04',
+      id: 'id1'
+    }];
+
+    render();
+
+    function addTodo() {
+      const textbox = document.getElementById('todo-title');
+      const title = textbox.value;
+      const datePicker = document.getElementById('date-picker');
+      const dueDate = datePicker.value;
+
+      const id = new Date().getTime();
+
+      todos.push({
+        title: title,
+        dueDate: dueDate,
+        id: id
+      });
+
+      render();
+    }
+
+    //delete button//
+    function deleteTodo() {
+      const deleteButton = event.target;
+      const idToDelete = deleteButton.id;
+
+      todos = todos.filter(function(todo) {
+        //if the id of this todo matches idToDelete, return false
+        if (todo.id === idToDelete) {
+          return false;
+          else {
+            return true;
+          }
+        }
+      });
+      render();
+    };
+
+
+
+
+    function render() {
+      // reset list //
+
+      document.getElementById('todo-list').innerHTML = '';
+      todos.forEach(function(todo) {
+        const element = document.createElement('div');
+        element.innerText = todo.title + ' ' + todo.dueDate;
+
+        //delete button//
+        const deleteButton = document.createElement('button');
+        deleteButton.innerText = 'delete';
+        deleteButton.style = 'margin-left: 12px';
+        deleteButton.onclick = deleteTodo;
+        deleteButton.id = todo.id;
+        element.appendChild(deleteButton);
+
+        const todoList = document.getElementById('todo-list');
+        todoList.appendChild(element);
+      });
+    }
+  </script>
+</body>
+
+</html>
